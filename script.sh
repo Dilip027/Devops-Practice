@@ -11,6 +11,7 @@ echo "Hello World !!!!"
 
 echo "In this script we'll get the basic system details"
 echo "---------------------------"
+
 ##HOSTNAME##
 HOSTNAME=$(hostname)
 
@@ -22,3 +23,8 @@ WHOAMI=$(whoami)
 
 ##DISK DETAILS##
 DISK=$(df -hT)
+
+echo -e "Hostname: \n$HOSTNAME"
+echo -e "Uptime: \n$UPTIME"
+echo -e "Whoami: \n$WHOAMI"
+echo -e "Disk Usage: \n$DISK"
